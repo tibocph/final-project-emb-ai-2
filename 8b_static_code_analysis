@@ -1,0 +1,7 @@
+theia@theiadocker-tibogery:/home/project/final_proj
+ect$ pylint server_modified.py
+************* Module server_modified
+server_modified.py:63:0: C0304: Final newline missing (missing-final-newline)
+
+-----------------------------------
+Your code has been rated at 9.38/10
