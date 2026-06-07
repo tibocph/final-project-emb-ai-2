@@ -1,0 +1,23 @@
+from EmotionDetection import emotion_detection
+from emotion_detection import emotion_detector
+
+def test_emotion_detector():
+
+    emotion_test_data = {
+        "I am glad this happened": "joy",
+        "I am really mad about this": "anger",
+        "I feel disgusted just hearing about this": "disgust",
+        "I am so sad about this": "sadness",
+        "I am really afraid that this will happen": "fear"
+    }
+
+    for statement, expected_emotion in emotion_test_data.items():
+        result= emotion_detector(statement)
+        dominant_emotion=result["dominant_emotion"]
+
+        if dominant_emotion == expected_emotion:
+            print("correct result")
+
+        else:
+            print("incorrect result")
+
