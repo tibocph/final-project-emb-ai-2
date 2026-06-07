@@ -21,6 +21,9 @@ def emotion_detector(text_to_analyze):
     
         if response.status_code == 200:
             return response.json()
+            result= response.json()
+            print(json.dumps(result, indent=4))
+            return result
         elif response.status_code == 400:
             return {"error": "Blank text or invalid input provided."}
         else:
