@@ -1,0 +1,8 @@
+theia@theiadocker-tibogery:/home/project/
+final-project-emb-ai-2$ python3 test_emotion_detection_v2.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.602s
+
+OK
+
